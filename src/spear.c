@@ -11,15 +11,14 @@ unsigned int p(int A[],int n,int k,int x){
   for(i = 0 ; i < n; i++ ){
     a = a + A[i]/x;
   }
-  if (k <= a) return 1 ;
-  return 0 ;
+  return k <= a ;
 }
 
 
 int main(){
   int i, lb, ub;
   lb = 0;
-  ub = 1000000000;
+  ub = 100001;
   scanf("%d%d", &n, &k);
   if(n > 100000) return 1 ;
   if(n < 1) return 1;

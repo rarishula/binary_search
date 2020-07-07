@@ -12,8 +12,7 @@ unsigned int p(int A[],int n,int k,int x){
     else a = a + A[i] / x;
   }
 
-  if (k >= a) return 1;
-  return 0 ;
+  return k >= a ;
 }
 
 
@@ -33,7 +32,7 @@ int main(){
   }
   while( ub - lb > 1){
     int mid = (lb + ub)/2;
-    if(p(A,n,k,mid) == 1 ) ub = mid;
+    if( p(A,n,k,mid) ) ub = mid;
     else lb = mid;
   }
   printf("%d",ub);
