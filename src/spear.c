@@ -18,7 +18,7 @@ unsigned int p(int A[],int n,int k,int x){
 int main(){
   int i, lb, ub;
   lb = 0;
-  ub = 100001;
+  ub = 1000000001;
   scanf("%d%d", &n, &k);
   if(n > 100000) return 1 ;
   if(n < 1) return 1;
