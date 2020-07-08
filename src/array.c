@@ -20,7 +20,7 @@ int main(){
   scanf("%d%d", &n, &k);
   if(n > 100000) return 1 ;
   if(n < 1) return 1;
-  if(k > 100000) return 1 ;
+  if(k > 1000000000) return 1 ;
   if(k < 1) return 1;
   lb = -1;
   ub = n;
